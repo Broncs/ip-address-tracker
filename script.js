@@ -15,7 +15,6 @@ async function geolocation(address) {
       `https://geo.ipify.org/api/v1?apiKey=at_Hqft6rsFX1tPRMTVo3Gq9zaGTbGcj&domain=${address}`
     );
     const data = await res.json();
-
     addDataToDom(data);
     getMapLocation(data.location.lat, data.location.lng);
   } catch (err) {
