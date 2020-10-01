@@ -12,7 +12,7 @@ const isp = document.querySelector(".results-four");
 async function geolocation(address) {
   try {
     const res = await fetch(
-      `https://geo.ipify.org/api/v1?apiKey=at_Hqft6rsFX1tPRMTVo3Gq9zaGTbGcj&ipAddress=${address}`
+      `https://geo.ipify.org/api/v1?apiKey=at_Hqft6rsFX1tPRMTVo3Gq9zaGTbGcj&domain=${address}`
     );
     const data = await res.json();
 
