@@ -116,12 +116,8 @@ nav .btn-search:focus {
   border-radius: 0 10px 10px 0;
 }
 
-#weathermap {
-  z-index: -2;
-}
 .map {
   height: 70vh;
-  max-height: 700px;
   width: 100%;
   z-index: -1;
 }
@@ -138,6 +134,10 @@ nav .btn-search:focus {
     height: 80px;
     padding: 0 20px;
   }
+  .info .info-card:not(:first-of-type) {
+    margin-top: -20px;
+  }
+
   .info .info-card ul li:first-of-type {
     margin-bottom: 10px;
   }
@@ -178,5 +178,9 @@ nav .btn-search:focus {
   }
   .info .info-card ul li:last-of-type {
     font-size: 14px;
+  }
+
+  .map {
+    height: 90vh;
   }
 }
